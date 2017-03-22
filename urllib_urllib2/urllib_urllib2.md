@@ -1,6 +1,6 @@
-#python的httplib、urllib和urllib2的区别及用
+# python的httplib、urllib和urllib2的区别及用
 
-##urllib和urllib2
+## urllib和urllib2
 
 urllib 和urllib2都是接受URL请求的相关模块，但是urllib2可以接受一个Request类的实例来设置URL请求的headers，urllib仅可以接受URL。
 
@@ -10,12 +10,12 @@ urllib提供urlencode方法用来GET查询字符串的产生，而urllib2没有�
 
 目前的大部分http请求都是通过urllib2来访问的
 
-##httplib
+## httplib
 
 httplib实现了HTTP和HTTPS的客户端协议，一般不直接使用，在python更高层的封装模块中（urllib,urllib2）使用了它的http实现。
 
 
-##urllib简单用法
+## urllib简单用法
 
 #encoding:utf-8
 import urllib
@@ -201,7 +201,7 @@ def sendhttp():
 if __name__ == '__main__':      
     sendhttp()  
     
-＃访问https：
+＃ 访问https：
 urllib来说有两种方式，一种是urllib.urlopen()有一个参数context,把他设成ssl._create_unverified_context
 或者修改现在的全局默认值
 _create_unverified_https_context
